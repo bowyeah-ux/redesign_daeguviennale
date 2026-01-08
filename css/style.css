@@ -1,0 +1,606 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {font-family: 'SUIT', sans-serif;}
+
+.minner {
+    width: 100%;
+}
+.firstimg {
+    width: 100%;
+    height: 100vh;
+    background: url('../image/title-start-img.png') no-repeat center/cover;
+    transition: all 1s;
+}
+
+.imginner {
+    width: 62%;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+}
+.imginner.on {
+   opacity: 1;
+   transition: all 2s;
+}
+.title {
+    padding: 23rem 0 10rem;
+}
+.title p {
+    font-size: 5.5rem;
+    font-weight: 700;
+    letter-spacing: -0.08px;
+    min-width: 1rem;
+    white-space: nowrap;
+    position: absolute;
+    top: 15rem; left: 50%;
+    transform: translateX(-50%);
+    color: transparent;
+}
+
+
+.title p::before {
+    content: "생명의 울림";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typing 3s steps(25) forwards; 
+    animation-delay: 1s;
+}
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+ 
+    100% {
+        width: 100%;
+        border-right: 1px solid transparent;
+    }
+    
+}
+.title h1 {
+    font-size: 7rem;
+    font-weight: 800;
+    min-width: 1rem;
+    white-space: nowrap;
+    position: absolute;
+    top: 23rem; left: 50%;
+    transform: translateX(-50%);
+    color: transparent;
+}
+.title h1::before {
+    content: "THE PULSE OF LIFE";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typing 3s steps(25) forwards; 
+    animation-delay: 1s;
+}
+
+.minfo {
+    padding: 13rem 0 5rem 0;
+}
+.minfo p {
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+.minfo span {
+    font-size: 2.4rem;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+.btmlogo {
+    display: flex;
+    justify-content: center;
+    margin: 12rem 0;
+}
+.btmlogo img {
+    width: 6rem;
+    height: 4.8rem;
+}
+.btmlogo p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 150%;
+    margin-left: 1.5rem;
+}
+
+/* -- 포스터 섹션 */
+.poster {
+    width: 100%;
+    background: url('../image/poster-info-bg.png') no-repeat center/cover;
+}
+.posterinner {
+    width: 62%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 16rem 0;
+    
+}
+
+.posterleft .ptitle {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.posterinner .posterleft .textwrap {
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+    line-height: 160%;
+    color: #333;
+}
+.textwrap .toptext {
+    padding: 2rem 0;
+}
+
+.posterinner .posteright img {
+    width: 42rem;
+    height: 59rem;
+    margin-left: 8rem;
+    box-shadow: 2px 3px 15px #757575;
+    /* opacity: 0;
+    animation: post 1s forwards; */
+}
+/* @keyframes post {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    } */
+.spaceinfo {
+    font-size: 1.8rem;
+    margin: 3.2rem 0;
+}
+.spaceinfo .sche, .spaceinfo .space, .spaceinfo .restday {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 50rem;
+    border-radius: 30px;
+    text-align: left;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    margin-bottom: 1rem;
+}
+.spaceinfo .sche span:first-child, .spaceinfo .space span:first-child {
+    border-right: 1px solid #a2a2a2;
+    padding: 0 6rem;
+}
+.spaceinfo .restday span:first-child {
+    border-right: 1px solid #a2a2a2;
+    padding: 0 5.2rem;
+}
+.spaceinfo .sche span:nth-child(2), .spaceinfo .space span:nth-child(2), .spaceinfo .restday span:nth-child(2) {
+    padding-left: 2rem;
+}
+.posterinner button {
+    width: 19rem;
+    height: 6rem;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.8rem;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+.posterinner button:hover {
+    background-color: #3A3335;
+    color: #fff;
+}
+
+/* --- about 섹션 */
+.cardmenu {
+    width: 100%;
+    background: url('../image/cardmenu-bg.png') no-repeat center/cover;
+}
+.cardinner {
+    width: 62%;
+    margin: 0 auto;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+}
+.cardinner .ctitle {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 7rem;
+    color: #fff;
+}
+
+.card {
+    width: 28rem;
+    height: 46.5rem;
+    background: url('../image/cardbg.png') no-repeat center/cover;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: -6px 11px 10px #000000a4;
+    cursor: pointer;
+    position: relative;
+}
+.card:hover .item{
+    opacity: 0;
+}
+.card .item {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 17rem;
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.8s;
+}
+
+
+.cardwrap {
+    display: flex;
+    gap: 4rem;
+}
+
+.itemside {
+    font-weight: 400;
+    width: 100%;
+    border-radius: 5rem;
+    height: 465px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #808080;
+    padding: 5rem 3rem;
+    color: #f4f4f4;
+   opacity: 0;
+    transition: all 0.8s;
+}
+.card:hover .itemside {
+    opacity: 1;
+}
+
+.itemside p {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    font-weight: 500;
+}
+.itemside span {
+    line-height: 150%;
+    font-weight: 400;
+}
+.top span, .end span {
+    font-size: 1.5rem;
+    line-height: 150%;
+}
+.itemside .top {
+    margin-bottom: 2.2rem;
+}
+
+.click {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+}
+
+.four .click {
+    font-size: 2rem;
+   opacity: 0;
+   position: absolute;
+   bottom: 2rem; left: 50%;
+   transform: translateX(-50%);
+   font-weight: 500;
+    transition: all 0.2s;
+   
+}
+.four .items {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 17rem;
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s;
+}
+
+.four:hover {
+    background-color: #808080;
+    background-image: none;
+    color: #fff;
+}
+
+.four:hover .click {
+    opacity: 1;
+}
+
+
+
+
+
+
+/* --- 주제전 */
+header {
+    width: 100%;
+    height: 100px;
+    /* position: fixed;
+    top: 0; left: 0;
+    z-index: 5; */
+
+}
+.hinner {
+    width: 100%;
+    height: 100%;
+    background: #fff url('../image/navbg.png') no-repeat center/cover;
+}
+.hitem {
+    display: flex;
+    width: 46rem;
+    margin: 0 6rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+
+}
+.hitem img {
+    width: 8rem;
+    height: 7rem;
+}
+.hitem h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.minner {
+    width: 100%;
+}
+.infobox {
+    width: 80%;
+    display: flex;
+    margin: 10rem auto;
+    font-size: 2rem;
+    gap: 2rem;
+    
+    
+}
+.mtitle {
+    width: 25rem;
+    margin-right: 2rem;
+}
+.mtitle span {
+    white-space: nowrap;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.infobox .mtextbox1 {
+    width: 120rem;
+}
+.infobox .mtextbox2
+ {
+    width: 120rem;
+ }
+ 
+ 
+ 
+ .artslide {
+    width: 100%;
+    height: 49rem;
+    position: absolute;
+    bottom: 0; left: 0;
+   
+}
+
+.swiper-slide {
+    width: 62rem !important;
+}
+.swiper-slide-active {
+    width: 67rem !important;
+}
+
+.artslide .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next {
+    border-radius: 50%;
+    background-color: #ffffff5d;
+    width: 50px;
+    height: 50px;
+    margin-right: 2rem;
+}
+.swiper-button-next:after {
+    color: #464646;
+    font-size: 2rem;
+    padding-left: 0.2rem;
+}
+.swiper-button-prev {
+    border-radius: 50%;
+    background-color: #ffffff5d;
+    width: 50px;
+    height: 50px;
+    margin-left: 2rem;
+}
+.swiper-button-prev:after{
+    color: #464646;
+    font-size: 2rem;
+    padding-right: 0.2rem;
+}
+.swiper-pagination-bullet-active {
+    background-color: rgb(202, 101, 135);
+}
+
+
+/* ---특별전 */
+.infobox2 {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding: 80rem 0 10rem;
+    font-size: 2rem;
+    gap: 2rem;
+
+}
+.stitle {
+    width: 25rem;
+    margin-right: 2rem;
+}
+.stitle span {
+    white-space: nowrap;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.infobox2 .stextbox1 {
+    width: 120rem;
+    text-align: left;
+    line-height: 150%;
+    letter-spacing: -0.05rem;
+}
+.infobox2 .stextbox2
+ {
+    width: 120rem;
+ }
+
+ .second {
+    position: relative;
+    
+ }
+
+
+ /* --- 이벤트 */
+ .eminner {
+    width: 100%;
+ }
+ .picturewrap {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0 auto;
+ }
+ .picturewrap img {
+    width: 30rem;
+ }
+
+ .picturewrap span {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 400;
+ }
+
+ /* --- faq */
+ 
+ .qinner {
+    width: 100%;
+    background-color: #F0E6E9;
+    padding: 10rem;
+ }
+ .qnabox {
+    background-color: #f1f1f1;
+    width: 70%;
+    margin: 0 auto;
+    padding: 7rem 0 15rem 0;
+    
+ }
+
+ .qnabox .qnatitle h1 {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #3333333a;
+ }
+ 
+  .qnabox .question {
+    font-size: 2rem;
+    border-bottom: 1px solid #3333333a;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    cursor: pointer;
+    
+  }
+  .qnabox .answer {
+    font-size: 2rem;
+     width: 80%;
+     margin: 0 auto;
+    padding: 2rem 1.5rem;
+    display: none;
+  }
+  .qnabox .answer .answerwrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .qnabox .answer i {
+    color: rgba(139, 137, 137, 1);
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .qnabtm {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    gap: 2rem;
+  }
+  .qnabtm img {
+    width: 7rem;
+    height: 6rem;
+    object-fit: contain;
+
+  }
+  .qnabtm p {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+
+  }
+
+
+  /* 고탑 버튼 */
+  .gotop {
+    width: 5rem;
+    height: 7rem;
+    position: fixed;
+    right: 6rem; bottom: 5rem;
+    border-radius: 40px;
+    background-color: #000000a6;
+    box-shadow: -1px 3px 12px #69696996;
+    display: none;
+  }
+  .gotop span {
+    position: absolute;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    top: 30px; left: 19px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+  }

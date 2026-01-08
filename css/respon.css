@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .title p {
+        font-size: 4rem;
+    }
+    .title h1 {
+        font-size: 6rem;
+    }
+    .posterinner {
+        flex-direction: column;
+    }
+    .ptitle  h1{
+        text-align: center;
+    }
+    .posterinner .posteright img {
+        margin: 6rem auto;
+        width: 50rem;
+        
+    }
+    .posterinner button {
+        width: 50rem;
+        font-weight: 600;
+    }
+    .cardwrap {
+        flex-direction: column;
+    }
+    .card {
+        width: 46rem;
+        height: 28rem;
+    }
+    .itemside {
+        padding: 3rem;
+    }
+    .card .item, .items {
+        margin-top: 10rem;
+    }
+    .itemside {
+        height: 28rem;
+    }
+
+    
+}

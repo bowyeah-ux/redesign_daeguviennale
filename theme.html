@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주제전</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hinner">
+            <div class="hitem">
+                <img src="image/logo.png" alt="">
+                <h1>주제전</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="minner">
+            <div class="infobox">
+                <div class="mtitle">
+                    <span>생명의 울림</span>
+                </div>
+                <div class="mtextbox1">
+                    <p>인간에서 비인간에 이르기까지, 가시적인 세계에서 초자연적인 힘에 이르기까지, 제10회 대구사진비엔날레는 자연과의 관계 및 인간의 우주 내 위치에 대해 질문을 던지는 작품들을 통해 살아 있는 것들의 다양성, 연약함, 회복력을 탐구한다.</p>
+
+                </div>
+                <div class="mtextbox2">
+                    <p>'살아 있음'에 대한 질문은 오랫동안 생물학적 관점과 철학적 관점 사이에서 오가며 탐구되었고, 많은 철학자와 과학자의 관심사였다. 오늘날, '공생세(Symbiocene)'라는 개념은 모든 생명체 간의 상호 관계를 고려하여 살아 있는 것의 의미를 재정의하는 것으로 우리를 이끈다.</p>
+                </div>
+            </div>
+            <div class="swiper artslide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="image/main_ex_01.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/main_ex_02.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/main_ex_03.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/main_ex_04.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/main_ex_05.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/main_ex_06.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/main_ex_07.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/main_ex_08.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/main_ex_09.jpg"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/main_ex_10.jpg"/>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+             </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <script>
+    var swiper = new Swiper(".artslide", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      effect: 'slide',
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+  </script>
+</body>
+</html>
