@@ -1,7 +1,7 @@
 $(function(){
     $('.firstimg').mouseenter(function(){
         $('.firstimg').css({
-            'background' : `url('../image/title-img.png') no-repeat center/cover`
+            'background' : `url('image/title-img.png') no-repeat center/cover`
         })
         $('.imginner').addClass('on')
     })
